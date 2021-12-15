@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Source Sans 3', sans-serif;
+}
+a:hover{
+    opacity:0.8;
+}
+input{
+    outline:none;
+}
+.menu-icon{
+  display: none;
+}
+.fa-bars{
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 8px;
+}
+.card-image{
+    width:100%;
+    height:200px;
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feedback form div , .comment div{
+    width:100%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.feedback form div input, .comment div input{
+    width:100%;
+    padding: 1rem;
+    border: 1px dotted gray;
+    border-radius: 4px;
+}
+textarea{
+    width:100%;
+    border: 1px dotted gray;
+    border-radius: 4px;
+}
+.footer-form{
+    border-radius:5px;
+    width:70%;
+}
+.line{
+    width:100%;
+    height:4px;
+    background-color:black;
+}
+
+@media screen and (max-width:960px){
+.item{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    position: absolute;
+    top:80px;
+    left:-100%;
+    opacity: 1;
+    transition: all 0.3s ease;
+    }
+    .item.active{
+    background: #fff;
+    padding-top:20px;
+    left:0;
+    opacity: 1;
+    transition: all 0.3s ease;
+    height:70vh;
+    z-index: 1;
+    color:black;
+    }
+    .menu-icon{
+    display: block;
+    position:absolute;
+    top:0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    }
+    .fa-times{
+    font-size: 2rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding:5px 8px;
+    z-index: 2;
+    }
+    .footer-form{
+        border-radius:5px;
+        width:100%;
+    }
+}
