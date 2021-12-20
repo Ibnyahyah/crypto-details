@@ -6,7 +6,7 @@ export function Footer(){
             <footer className="container bg-white p-1">
                 <div className="row gap-1">
                     <div className="col-6-sm col-4-md col-4-lg">
-                        <h1>Logo</h1>
+                        <h1><img src="/crypto_details_hub.png" style={{width:'80px'}} alt="crypto_details_hub Logo"/></h1>
                         <p>Crypto-details hub provides adequate details about crypto-currencies, either COINs, TOKENs or NFTs.</p>
                     </div>
                     <div className="col-6-sm col-3-md col-3-lg">

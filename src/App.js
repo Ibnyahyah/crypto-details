@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Posts/>}/>
-        <Route path="/post-detail" element={<PostDetails/>}/>
+        <Route path="/post-detail/:postId" element={<PostDetails/>}/>
         <Route path="/about-us" element={<Aboutus/>}/>
         <Route path="/terms-and-condition" element={<Termscondition/>}/>
         <Route path="/feedback" element={<FeedBack/>}/>

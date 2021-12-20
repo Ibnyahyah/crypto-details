@@ -1,16 +1,30 @@
+import { useEffect, useState } from "react";
 import { Footer } from "../../component/footer/footer";
 import NavBar from "../../component/navigation/navigation";
 import Post from "../../component/post/post";
-import { Data } from "./dummy-data";
+import axios from "axios";
 
 const Posts = () =>{
+
+    const [data,setData] = useState([]);
+    const [loading, setloading] = useState(false);
+
+    useEffect(()=>{
+        const fetchPost = async() =>{
+           const res = await axios.get('https://details-server.herokuapp.com/api/v1/post');
+           setData(res.data);
+           setloading(false);
+        }
+        fetchPost();
+    },[])
+    if(loading){
+        return<p className="text-black">Loading...</p>
+    }
     return(
         <>
             <NavBar/>
             <div style={{minHeight:'90vh'}}>
-               <Post data={Data}/>
-               <Post data={Data}/>
-               <Post data={Data}/>
+               <Post data={data}/>
             </div>
             <Footer/>
         </>

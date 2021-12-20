@@ -12,7 +12,7 @@ render(){
     return(
         <div className='navbar navbar-white'>
             <nav className="navbar navbar-black text-white container">
-                <header className="site-title">Logo</header>
+                <header className="site-title"><img src="/crypto_details_hub_w.png" style={{width:'80px'}} alt="crypto_details_hub Logo"/></header>
                     <div className="menu-icon" onClick={this.handleClick}>
                         <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}/>
                     </div>
