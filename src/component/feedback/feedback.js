@@ -1,4 +1,3 @@
-import { AboutUs } from "../about-us/about-us";
 import { TermsConditon } from "../terms-conditon/terms-condition";
 
 export default function FeedBacks(){
@@ -31,12 +30,7 @@ export default function FeedBacks(){
                 </div>
                 <div className="col-6-sm col-6-md">
                     <div className="card">
-                        <div>
-                           <AboutUs/>
-                        </div>
-                        <div>
-                            <TermsConditon/>
-                        </div>
+                        <TermsConditon/>
                     </div>
                 </div>
             </div>

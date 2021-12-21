@@ -7,6 +7,7 @@ export function PostDetail({data}){
                         <p className="text-gray">Author : {data.author}</p>
                         <p className="text-black">Website : <a href={`https://${data.website}`} className="text-blue" target="_blank" rel="noreferrer">{data.website}</a></p>
                         <p className="text-black">Supply : {data.supply}</p>
+                        <p className="text-gray">Chain-network : {data.chain}</p>
                         <p className="text-gray">Contract : <a href={`https://www.google.com/search?q=${data.contract}`} target="_blank" rel="noreferrer">{data.contract}</a></p>
                         <p className="text-gray" style={{float:'right'}}>Upload On: {new Date(data.createdAt).toDateString()}</p>
                     </div>

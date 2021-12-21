@@ -6,7 +6,7 @@ const Aboutus =()=> {
     return(
         <>
             <NavBar/>
-            <div className="container mt-5" style={{minHeight:'75vh'}}>
+            <div className="container mt-5" style={{minHeight:'70vh'}}>
                 <AboutUs/>
             </div>
             <Footer/>

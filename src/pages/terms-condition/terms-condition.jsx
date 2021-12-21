@@ -6,7 +6,7 @@ const Termscondition =()=> {
     return(
         <>
             <NavBar/>
-            <div className="container mt-5" style={{minHeight:'75vh'}}>
+            <div className="container mt-4" style={{minHeight:'75vh'}}>
                 <TermsConditon/>
             </div>
             <Footer/>
