@@ -1,6 +1,6 @@
 {
-  "short_name": "crypto_details_hub",
-  "name": "crypto_details_hub",
+  "short_name": "Cryptographerhub",
+  "name": "Cryptographerhub",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "crypto_details_hub.png",
+      "src": "/Cryptographerhub(2).png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "crypto_details_hub.png",
+      "src": "/Cryptographerhub(2).png",
       "type": "image/png",
       "sizes": "512x512"
     }

@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Loader } from '../../component/loader/loader';
 import { useEffect, useState } from "react";
 import { useLocation } from 'react-router';
 import { Footer } from "../../component/footer/footer";
@@ -11,7 +12,7 @@ const PostDetails =()=>{
     const location = useLocation();
     const path = location.pathname.split("/")[2];
     const [post, setPost] = useState([]);
-    const [loading, setloading] = useState(false);
+    const [loading, setloading] = useState(true);
 
     useEffect(()=>{
         const fetchPost = async() =>{
@@ -24,7 +25,7 @@ const PostDetails =()=>{
     },[path])
 
     if(loading){
-        return(<div className="display-f align-center justify-center" style={{height:'90vh'}}>Loading data</div>)
+        return<Loader/>
     }
 
     return(

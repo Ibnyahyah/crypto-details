@@ -1,11 +1,11 @@
-export default function Post({data}){
+export default function BlockchainPost({data}){
 
     return(
         <div className="container">
             <div className="row mt-3 gap-1" >
                 {data.map((data)=>(
                     <div className="col-6-sm col-4-md col-4-lg" key={data._id}>
-                        <a href={`/${data.title}/${data._id}`}>
+                        <a href={`/blockchain/${data.title}/${data._id}`}>
                             <div className="card">
                                 <div className="card-image">
                                     <img src={data.image} alt="Crypto-detais hub"/>

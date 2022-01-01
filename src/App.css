@@ -85,7 +85,20 @@ textarea{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+/* Copied  */
+.copied{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    -webkit-text-size-adjust: 2;
+    -webkit-box-orient: horizontal;
+}
 /* text display limitaion ends here */
+
+select{
+    padding:10px 20px;
+    width:100%;
+    outline:none;
+}
 
 
 @media screen and (max-width:960px){
@@ -124,6 +137,9 @@ textarea{
     border: 1px solid #fff;
     padding:5px 8px;
     z-index: 2;
+    }
+    .title-header{
+        font-size:24px !important;
     }
     .footer-form{
         border-radius:5px;

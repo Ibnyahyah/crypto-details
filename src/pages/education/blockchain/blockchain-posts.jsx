@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
-import { Footer } from "../../component/footer/footer";
-import { Loader } from '../../component/loader/loader';
-import NavBar from "../../component/navigation/navigation";
-import Post from "../../component/post/post";
+import { Footer } from "../../../component/footer/footer";
+import { Loader } from '../../../component/loader/loader';
+import {EducationNavBar} from "../../../component/navigation/navigation";
 import axios from "axios";
+import BlockchainPost from "../../../component/education/blockchain/blockchain-post";
 
-const Posts = () =>{
+const BlockchainPosts = () =>{
 
     const [data,setData] = useState([]);
     const [loading, setloading] = useState(true);
 
     useEffect(()=>{
         const fetchPost = async() =>{
-           const res = await axios.get('https://details-server.herokuapp.com/api/v1/post');
+           const res = await axios.get('https://details-server.herokuapp.com/api/v1/education-post');
            setData(res.data.sort((p1,p2)=>{
                return new Date(p2.createdAt) - new Date(p1.createdAt);
            }));
@@ -25,12 +25,12 @@ const Posts = () =>{
     }
     return(
         <>
-            <NavBar/>
+            <EducationNavBar/>
             <div style={{minHeight:'90vh'}}>
-               <Post data={data}/>
+               <BlockchainPost data={data}/>
             </div>
             <Footer/>
         </>
     )
 }
-export default Posts;
+export default BlockchainPosts;
